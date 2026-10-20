@@ -1,14 +1,11 @@
 ## PePoToon目前依旧处于测试中，存在破坏性更新，慎用。
 ### 【安装说明】
 * 打开你的 2022.3.22f1版本 VRChat Unity工程，将"PePoToonBRP.unitypackage"文件导入进去，如果导入成功，"Assets"文件夹内会有一个"PePoToon"文件夹，这就是我的着色器了。<br>
-* 你注意到"PePoToon"文件夹内还有一个"Test_YouCanDeleteThis"文件夹，里面有一个"New Scene"场景，打开它，里面展示了一些PePoToon着色器的特色功能。<br>
+* "PePoToonBRPSample.unitypackage"额外包含了一个"Test_YouCanDeleteThis"文件夹，里面有一个"New Scene"场景，打开它，里面展示了一些PePoToon着色器的特色功能。<br>
 * "PePoToon"文件夹可以放在"Assets"文件夹内的任意位置，有时可能需要重启Unity。除非你已含有PePoToon同名着色器，否则一般不会出现问题。
 * 只适配了Unity 2022.3.22f1版本，其他版本可能存在问题。只支持前向渲染，不支持延迟渲染。只支持英文和简体中文，根据你的电脑语言自动切换。
 * 您应当把PePoToon看作是Unity标准着色器的外轮廓版本，而非LilToon的平替。PePoToon是基于真实光照开发的，无法实现华丽的特效。
 * "视频讲解.mp4"介绍了PePoToon的大部分功能，2026年6月27日录制。
-* 警告："WaterUnder"着色器已从最新版中移除，如果想使用"WaterUnder"着色器，您只能下载"20260814"发行版。
-* "WaterUnder.fbx"是一个为WaterUnder着色器准备的特殊模型，它使用了顶点颜色Alpha通道：水面1、边界0，你可以根据这一规则制作自己的河流海洋，
-WaterUnder着色器可以实现无缝的水上水下效果，缺点是模型必须是凸面体，凹面体会存在问题。
 * "SunVisor360.unitypackage"是豆日向的太阳帽，但是可以360度旋转。
 ### 【一些问题】
 * 由于Unity内置管线不支持2500以上渲染队列的接收阴影，为了让透明物体接收阴影，可以将半透明物体的Render Queue从3000改为2460（LilToon的透明模式就是2460队列），
