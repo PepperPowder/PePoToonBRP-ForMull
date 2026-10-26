@@ -7,6 +7,7 @@
 * 您应当把PePoToon看作是Unity标准着色器的外轮廓版本，而非LilToon的平替。PePoToon是基于真实光照开发的，无法实现华丽的特效。
 * "视频讲解.mp4"介绍了PePoToon的大部分功能，2026年6月27日录制。
 * "SunVisor360.unitypackage"是豆日向的太阳帽，但是可以360度旋转。
+* "SimpleAudioLinkShader.unitypackage"是一个简单的AudioLink的着色器。
 ### 【一些问题】
 * 由于Unity内置管线不支持2500以上渲染队列的接收阴影，为了让透明物体接收阴影，可以将半透明物体的Render Queue从3000改为2460（LilToon的透明模式就是2460队列），
 并打开ZWrite（不勾选会导致天空盒遮住物体，因为天空盒的队列是2500.5），缺点是该材质物体后面队列大于等于2460的物体无法渲染。
